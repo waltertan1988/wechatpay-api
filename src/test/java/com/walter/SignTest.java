@@ -26,7 +26,7 @@ public class SignTest {
     @Test
     public void serialNumber() throws Exception {
         String pcf = "D:/apiclient_cert.pem";
-        System.out.println(SignUtil.getCertificate(pcf).getSerialNumber());
+        System.out.println(SignUtil.getCertificate(pcf).getSerialNumber().toString(16).toUpperCase());
     }
 
     @Test
